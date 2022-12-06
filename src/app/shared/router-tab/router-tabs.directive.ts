@@ -16,7 +16,9 @@ import { RouterTab } from './router-tab.directive';
 export class RouterTabs implements AfterContentInit, OnDestroy {
   subscription = new Subscription();
 
+
   @ContentChildren(RouterTab) routerTabs: QueryList<RouterTab> | undefined;
+
 
   constructor(private host: MatTabGroup, private router: Router) {}
 
@@ -35,11 +37,14 @@ export class RouterTabs implements AfterContentInit, OnDestroy {
     );
     this.subscription.add(
       this.host.selectedTabChange.subscribe(() => {
+
         const tab = this.routerTabs?.find(item => item.tab.isActive);
         if (!tab) {
           return;
         }
-        // this.router.navigateByUrl(tab.link.urlTree);
+        // this.router.navigateByUrl(tab.link.urlTree); test
+
+
         return true;
       })
     );
@@ -48,6 +53,7 @@ export class RouterTabs implements AfterContentInit, OnDestroy {
   private setIndex() {
     this.routerTabs?.find((tab, i) => {
       // if (!this.router.isActive(tab.link.urlTree, false)) return false;
+
       tab.tab.isActive = true;
       this.host.selectedIndex = i;
       return true;

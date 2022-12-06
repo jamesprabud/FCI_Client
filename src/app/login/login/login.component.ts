@@ -9,11 +9,13 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   constructor(private router: Router) {}
 
+
   ngOnInit() {
     console.log('Login')
   }
   onLogin() {
     console.log('onLogin')
+
     localStorage.setItem('isLoggedin', 'true');
     this.router.navigate(['/dashboard']);
   }

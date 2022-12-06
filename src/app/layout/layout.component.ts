@@ -29,10 +29,12 @@ export class LayoutComponent implements OnInit, OnDestroy {
     //     this.toolBarHeight = 64;
     //   }
     // });
+
   }
   ngOnInit() { }
 
   ngOnDestroy(): void {
     // this.mediaWatcher.unsubscribe();
+
   }
 }
