@@ -1,17 +1,61 @@
-<mat-nav-list>
+<mat-nav-list >
+  <div class="nested-menu">
+    <a mat-list-item (click)="showMenu = !showMenu" [routerLinkActive]="['is-active']">
+      <mat-icon class="sidenav-icon">point_of_sale</mat-icon>Sales
+    </a>
+    <ul class="nested submenu"  [class.expand]="showMenu" >
+      <li style="">
+        <a href="javascript:void(0)">
+          <span>Orders</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <span>Merge Orders</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <span>Copy So to another Customer Week</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <span>Sales Item Scroll</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <span>Container List</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <span>Detailed Sales Pivot</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <span>Find Sales Orders</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- [routerLinkActive]="'active'" -->
   <a
     *ngFor="let item of routes"
     mat-list-item
-    [routerLinkActive]="'active'"
+    
     [routerLink]="['/', item.path]"
   >
-    <mat-icon class="sidenav-icon">{{ item.data.icon }}</mat-icon>
+    <mat-icon  class="sidenav-icon">{{ item.data.icon }}</mat-icon>
     {{ item.data.text }}
   </a>
-  <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/blank-page']">
+  <!-- <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/blank-page']">
     <mat-icon class="sidenav-icon">insert_drive_file</mat-icon>Blank Page
-  </a>
-  <div class="nested-menu">
+  </a> -->
+  <!-- <div class="nested-menu">
     <a mat-list-item (click)="showMenu = !showMenu">
       <mat-icon class="sidenav-icon">add</mat-icon>Menu
     </a>
@@ -32,5 +76,5 @@
         </a>
       </li>
     </ul>
-  </div>
+  </div> -->
 </mat-nav-list>
