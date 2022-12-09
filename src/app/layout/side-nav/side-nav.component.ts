@@ -7,6 +7,7 @@ import { childRoutes } from 'src/app/admin/child-routes';
   templateUrl: './side-nav.component.html',
   styleUrls: ['./side-nav.component.scss']
 })
+
 export class SideNavComponent implements OnInit {
   showMenu = false;
   routes = childRoutes;

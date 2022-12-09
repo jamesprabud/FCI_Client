@@ -11,6 +11,7 @@ import { EmployeeService } from 'src/app/services/employee/employee.service';
 
 
 export class DashboardComponent implements OnInit {
+
   // public displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   // public dataSource1 =[
   //   {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
@@ -38,6 +39,7 @@ export class DashboardComponent implements OnInit {
   // ];
 
   // For University data
+
   displayedColumns: string[] = [
     'name',
     'domains',
@@ -168,6 +170,7 @@ export class DashboardComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    console.log('my Desk')
   }
 
 }

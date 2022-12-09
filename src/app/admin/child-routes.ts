@@ -3,16 +3,80 @@ export const childRoutes = [
     path: 'dashboard',
     loadChildren: () =>
       import('./dashboard/dashboard.module').then(m => m.DashboardModule),
-    data: { icon: 'dashboard', text: 'Dashboard' }
+    data: { icon: 'shopping_cart', text: 'Purchasing' }
   },
-
+  // {
+  //   path: 'charts',
+  //   loadChildren: () =>
+  //     import('./charts/charts.module').then(m => m.ChartsModule),
+  //   data: { icon: 'bar_chart', text: 'Sales' }
+  // },
+  // {
+  //   path: 'charts',
+  //   loadChildren: () =>
+  //     import('./charts/charts.module').then(m => m.ChartsModule),
+  //   data: { icon: 'shopping_cart', text: 'Purchasing' }
+  // },
   {
     path: 'charts',
     loadChildren: () =>
       import('./charts/charts.module').then(m => m.ChartsModule),
-    data: { icon: 'bar_chart', text: 'Charts' }
+    data: { icon: 'manage_accounts', text: 'Accounting' }
   },
-
+  {
+    path: 'charts',
+    loadChildren: () =>
+      import('./charts/charts.module').then(m => m.ChartsModule),
+    data: { icon: 'fire_truck', text: 'Logistics' }
+  },
+  {
+    path: 'charts',
+    loadChildren: () =>
+      import('./charts/charts.module').then(m => m.ChartsModule),
+    data: { icon: 'event_available', text: 'Availability' }
+  },
+  {
+    path: 'charts',
+    loadChildren: () =>
+      import('./charts/charts.module').then(m => m.ChartsModule),
+    data: { icon: 'list_alt', text: 'Reports' }
+  },
+  {
+    path: 'charts',
+    loadChildren: () =>
+      import('./charts/charts.module').then(m => m.ChartsModule),
+    data: { icon: 'home_work', text: 'Phonix' }
+  },
+  {
+    path: 'charts',
+    loadChildren: () =>
+      import('./charts/charts.module').then(m => m.ChartsModule),
+    data: { icon: 'card_giftcard', text: 'Phonix Purchasing' }
+  },
+  {
+    path: 'charts',
+    loadChildren: () =>
+      import('./charts/charts.module').then(m => m.ChartsModule),
+    data: { icon: 'hub', text: 'OSV' }
+  },
+  {
+    path: 'charts',
+    loadChildren: () =>
+      import('./charts/charts.module').then(m => m.ChartsModule),
+    data: { icon: 'local_florist', text: 'PBS' }
+  },
+  {
+    path: 'charts',
+    loadChildren: () =>
+      import('./charts/charts.module').then(m => m.ChartsModule),
+    data: { icon: 'celebration', text: 'VFS' }
+  },
+  {
+    path: 'charts',
+    loadChildren: () =>
+      import('./charts/charts.module').then(m => m.ChartsModule),
+    data: { icon: 'admin_panel_settings', text: 'Administration' }
+  },
   // {
   //   path: 'charts',
   //   loadChildren: () =>
