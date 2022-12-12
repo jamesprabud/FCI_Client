@@ -10,7 +10,6 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { HomeComponent } from './home/home.component';
 import { StatComponent } from './stat/stat.component';
-import { DashboardComponent } from 'src/app/components/dashboard/dashboard.component';
 
 @NgModule({
   imports: [
