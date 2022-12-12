@@ -10,7 +10,7 @@ import { childRoutes } from 'src/app/admin/child-routes';
 
 export class SideNavComponent implements OnInit {
   showMenu = false;
-  routes = childRoutes;
+  routes = childRoutes.filter(x => x.path != 'sales_dashboard');
   constructor() {}
 
   ngOnInit() {}

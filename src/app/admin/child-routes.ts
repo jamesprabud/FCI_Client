@@ -1,5 +1,11 @@
 export const childRoutes = [
   {
+    path: 'sales_dashboard',
+    loadChildren: () =>
+      import('./sales/sales.module').then(m => m.SalesModule),
+    data: { icon: 'shopping_cart', text: 'Sales Dashboard' }
+  },
+  {
     path: 'dashboard',
     loadChildren: () =>
       import('./dashboard/dashboard.module').then(m => m.DashboardModule),

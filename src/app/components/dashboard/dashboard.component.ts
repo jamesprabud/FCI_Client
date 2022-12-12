@@ -170,7 +170,7 @@ export class DashboardComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    console.log('my Desk')
+    console.log('My Dashboard')
   }
 
 }

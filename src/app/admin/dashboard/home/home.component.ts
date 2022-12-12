@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
   places: Array<Place> = [];
   constructor() {}
   ngOnInit() {
-    console.log('tempalte dashboard')
+    console.log('home dashboard')
     this.places = [
       {
         imgSrc: 'assets/images/card-1.jpg',
